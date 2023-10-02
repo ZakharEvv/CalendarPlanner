@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name" translatable="false">Calendar Planner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">გამარჯობა ცარიელი ფრაგმენტი</string>
+    <string name="home">მთავარი</string>
+    <string name="no_tasks_yet">ჯერ არ არის ამოცანები</string>
+    <string name="calendar">Კალენდარი</string>
+    <string name="add_task">შექმენით დავალება</string>
+    <string name="save">Გადარჩენა</string>
+    <string name="title">სათაური</string>
+    <string name="text">ტექსტი</string>
+    <string name="edit_task">დავალების რედაქტირება</string>
+    <string name="profile">პროფილი</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">პირველი ფრაგმენტი</string>
+    <string name="second_fragment_label">მეორე ფრაგმენტი</string>
+    <string name="next">შემდეგი</string>
+    <string name="previous">წინა</string>
+
+    <string name="hello_first_fragment">გამარჯობა პირველი ფრაგმენტი</string>
+    <string name="hello_second_fragment">გამარჯობა მეორე ფრაგმენტი. არგ: %1$s</string>
+    <string name="start">დაწყება</string>
+    <string name="calendar_planner">კალენდრის დამგეგმავი</string>
+    <string name="track_tasks_add_new_ones_specify_the_exact_time_and_do_more_with_calendar_planner">თვალყური ადევნეთ ამოცანებს, დაამატეთ ახლები, მიუთითეთ ზუსტი დრო და გააკეთეთ მეტი Calendar Planner-ით</string>
+</resources>

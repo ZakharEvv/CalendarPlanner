@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2935D0"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/home"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_add_task"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/add_task_icon"
+                android:layout_gravity="end"
+                android:padding="4dp"
+                android:layout_marginEnd="15dp"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_month_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            tools:text="Feb" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_calendar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="14dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="7"
+            tools:itemCount="30"
+            tools:listitem="@layout/calendar_item" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_days_main"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_days_main" />
+
+
+            <TextView
+                android:id="@+id/tv_today_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Monday"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/today_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_tasks_yet"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_today_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="16dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:itemCount="4"
+                tools:listitem="@layout/time_task_item" />
+
+            <TextView
+                android:id="@+id/tv_tomorrow_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Tuesday"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tomorrow_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_tasks_yet"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_tomorrow_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="16dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:listitem="@layout/time_task_item" />
+
+            <TextView
+                android:id="@+id/tv_day_after_tomorrow_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Wednesday"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/day_after_tomorrow_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_tasks_yet"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_day_after_tomorrow_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="16dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:itemCount="7"
+                tools:listitem="@layout/time_task_item" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

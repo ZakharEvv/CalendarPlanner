@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name" translatable="false">Calendar Planner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="home">Maison</string>
+    <string name="no_tasks_yet">Aucune tâche pour l\'instant</string>
+    <string name="calendar">Calendrier</string>
+    <string name="add_task">Créer une tâche</string>
+    <string name="save">Sauvegarder</string>
+    <string name="title">Titre</string>
+    <string name="text">Texte</string>
+    <string name="edit_task">Modifier la tâche</string>
+    <string name="profile">Profil</string>
+    <string name="title_activity_onboarding">Activité d\'intégration</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Premier fragment</string>
+    <string name="second_fragment_label">Deuxième fragment</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
+
+    <string name="hello_first_fragment">Bonjour premier fragment</string>
+    <string name="hello_second_fragment"><![CDATA[Bonjour deuxième fragment. Arg : %1$s]]></string>
+    <string name="start">Commencer</string>
+    <string name="calendar_planner">Planificateur de calendrier</string>
+    <string name="track_tasks_add_new_ones_specify_the_exact_time_and_do_more_with_calendar_planner">Suivez les tâches, ajoutez-en de nouvelles, spécifiez l\'heure exacte et faites plus avec Calendar Planner</string>
+</resources>

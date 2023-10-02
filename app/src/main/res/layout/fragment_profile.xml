@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.ProfileFragment"
+    android:orientation="vertical"
+    android:background="#F6F6F6">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/image_view_user_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+    
+    <EditText
+        android:id="@+id/edit_text_user_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="bold"
+        tools:text="Name"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/calendar_bg_white"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+                android:layout_marginEnd="30dp">
+                <View
+                    android:id="@+id/line_today_tasks"
+                    android:layout_width="20dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/stat_line"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv_today_day_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:text="name"
+                    android:layout_gravity="bottom"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+                <View
+                    android:id="@+id/line_tomorrow_tasks"
+                    android:layout_width="20dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/stat_line"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+                    android:id="@+id/tv_tomorrow_day_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:text="name"
+                    android:layout_gravity="bottom"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp">
+                <View
+                    android:id="@+id/line_after_tomorrow_tasks"
+                    android:layout_width="20dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/stat_line"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="30dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_after_tomorrow_day_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:text="name"
+                    android:layout_gravity="bottom"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name" translatable="false">Calendar Planner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Γεια σου κενό κομμάτι</string>
+    <string name="home">Σπίτι</string>
+    <string name="no_tasks_yet">Δεν υπάρχουν ακόμη εργασίες</string>
+    <string name="calendar">Ημερολόγιο</string>
+    <string name="add_task">Δημιουργία εργασίας</string>
+    <string name="save">Αποθηκεύσετε</string>
+    <string name="title">Τίτλος</string>
+    <string name="text">Κείμενο</string>
+    <string name="edit_task">Επεξεργασία εργασίας</string>
+    <string name="profile">Προφίλ</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Πρώτο Θραύσμα</string>
+    <string name="second_fragment_label">Δεύτερο απόσπασμα</string>
+    <string name="next">Επόμενο</string>
+    <string name="previous">Προηγούμενος</string>
+
+    <string name="hello_first_fragment">Γεια πρώτο κομμάτι</string>
+    <string name="hello_second_fragment">Γεια σου δεύτερο κομμάτι. Arg: %1$s</string>
+    <string name="start">Αρχή</string>
+    <string name="calendar_planner">Σχεδιασμός ημερολογίου</string>
+    <string name="track_tasks_add_new_ones_specify_the_exact_time_and_do_more_with_calendar_planner">Παρακολουθήστε εργασίες, προσθέστε νέες, καθορίστε την ακριβή ώρα και κάντε περισσότερα με το Calendar Planner</string>
+</resources>

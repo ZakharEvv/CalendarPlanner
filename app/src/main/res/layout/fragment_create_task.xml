@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    tools:context=".presentation.ui.CreateTaskFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/add_task"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:orientation="vertical"
+            android:background="@drawable/calendar_bg_white">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_months_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/month_item"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_calendar_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="7"
+                tools:itemCount="30"
+                tools:listitem="@layout/calendar_item" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <NumberPicker
+                android:id="@+id/hourPicker"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="center"
+                android:textSize="24sp"/>
+
+            <NumberPicker
+                android:id="@+id/minutePicker"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/calendar_bg_white">
+
+            <EditText
+                android:id="@+id/edit_text_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:hint="@string/title"
+                android:textSize="14sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/edit_text_task_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="70dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:hint="@string/text"
+                android:textSize="14sp"
+                android:gravity="top"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_save_task"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/save_item_bg"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:text="@string/save"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>

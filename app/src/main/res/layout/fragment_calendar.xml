@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.CalendarFragment"
+    android:orientation="vertical"
+    android:background="#F6F6F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/calendar"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_add_task"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/add_task_icon_black"
+                android:layout_gravity="end"
+                android:padding="4dp"
+                android:layout_marginEnd="15dp"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:orientation="vertical"
+            android:background="@drawable/calendar_bg_white">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_months_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/month_item"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_calendar_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="7"
+                tools:itemCount="30"
+                tools:listitem="@layout/calendar_item" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/day_after_tomorrow_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_tasks_yet"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_task_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            tools:listitem="@layout/task_calendar_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name" translatable="false">Calendar Planner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+    <string name="home">Ev</string>
+    <string name="no_tasks_yet">Henüz görev yok</string>
+    <string name="calendar">Takvim</string>
+    <string name="add_task">Görev oluştur</string>
+    <string name="save">Kaydetmek</string>
+    <string name="title">Başlık</string>
+    <string name="text">Metin</string>
+    <string name="edit_task">Görevi düzenle</string>
+    <string name="profile">Profil</string>
+    <string name="title_activity_onboarding">İlk Katılım Etkinliği</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">İlk Parça</string>
+    <string name="second_fragment_label">İkinci Parça</string>
+    <string name="next">Sonraki</string>
+    <string name="previous">Öncesi</string>
+
+    <string name="hello_first_fragment">Merhaba ilk parça</string>
+    <string name="hello_second_fragment">Merhaba ikinci parça. Argüman: %1$s</string>
+    <string name="start">Başlangıç</string>
+    <string name="calendar_planner">Takvim Planlayıcı</string>
+    <string name="track_tasks_add_new_ones_specify_the_exact_time_and_do_more_with_calendar_planner">Takvim Planlayıcı ile görevleri takip edin, yenilerini ekleyin, tam zamanı belirtin ve daha fazlasını yapın</string>
+</resources>

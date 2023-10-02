@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name" translatable="false">Calendar Planner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
+    <string name="home">Главная</string>
+    <string name="no_tasks_yet">Заданий пока нет</string>
+    <string name="calendar">Календарь</string>
+    <string name="add_task">Создать задачу</string>
+    <string name="save">Сохранить</string>
+    <string name="title">Заголовок</string>
+    <string name="text">Текст</string>
+    <string name="edit_task">Изменить задачу</string>
+    <string name="profile">Профиль</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Первый фрагмент</string>
+    <string name="second_fragment_label">Второй фрагмент</string>
+    <string name="next">Следующий</string>
+    <string name="previous">Предыдущий</string>
+
+    <string name="hello_first_fragment">Привет первый фрагмент</string>
+    <string name="hello_second_fragment">Привет второй фрагмент. Аргумент: %1$s</string>
+    <string name="start">Начать</string>
+    <string name="calendar_planner">Календарь-планировщик</string>
+    <string name="track_tasks_add_new_ones_specify_the_exact_time_and_do_more_with_calendar_planner">Отслеживайте задачи, добавляйте новые, указывайте точное время и делайте больше с помощью Calendar Planner</string>
+</resources>
